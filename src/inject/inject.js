@@ -9,8 +9,9 @@ chrome.extension.sendMessage({}, function(response) {
 		// ----------------------------------------------------------
 
      	document.addEventListener("mouseover", function(e){
- 			if (e.target.getAttribute("href") !== null) {
- 				console.log(e.target.getAttribute("href"));
+     		var link = e.target.getAttribute("href");
+ 			if (link !== null && link.includes("http")) {
+ 				console.log(link);
  			}
      		
      	});  		
