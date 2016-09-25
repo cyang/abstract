@@ -8,6 +8,14 @@ chrome.extension.sendMessage({}, function(response) {
 		console.log("Hello. This message was sent from scripts/inject.js");
 		// ----------------------------------------------------------
 
+     	document.addEventListener("mouseover", function(e){
+ 			if (e.target.getAttribute("href") !== null) {
+ 				console.log(e.target.getAttribute("href"));
+ 			}
+     		
+     	});  		
 	}
 	}, 10);
+
 });
+
