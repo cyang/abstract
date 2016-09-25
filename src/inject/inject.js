@@ -9,11 +9,12 @@ chrome.extension.sendMessage({}, function(response) {
 		// ----------------------------------------------------------
 
      	document.addEventListener("mouseover", function(e){
-     		var link = e.target.getAttribute("href");
- 			if (link !== null && link.includes("http")) {
- 				console.log(link);
- 			}
-     		
+     		setTimeout(function() {
+     			var link = e.target.getAttribute("href");
+ 				if (link !== null && link.includes("http")) {
+ 					console.log(link);
+ 				}
+     		}, 2000);
      	});  		
 	}
 	}, 10);
