@@ -1,31 +1,22 @@
+from flask import jsonify
+from flask import Flask
+from flask import request
+# from textparser import parser
 
-# import urllib
-# from bs4 import BeautifulSoup
+app = Flask(__name__)
+@app.route('/', methods=['GET'])
+def get_summary():
+  url = request.args.get('url')
+  #text = parser(url)
+  # response = unirest.get("https://community-smmry.p.mashape.com/?SM_API_KEY=279153A47B&SM_LENGTH=2&SM_URL={}".format(url),
+  # headers={
+  #   "X-Mashape-Key": "UHmxbuQKVWmsh69rxNfyDIPjObcVp1DhFdQjsnR0gUpePgdDUw",
+  #   "Accept": "text/plain"
+  # # })
+  response = str(html)
+  d = json.loads(html)
+  return d["sm_api_message"]
 
-# def parser(url):
-#   html = urllib.urlopen(url).read()
-#   soup = BeautifulSoup(html)
-
-#   # kill all script and style elements
-#   for script in soup(["script", "style"]):
-#       script.extract()    # rip it out
-
-#   # get text
-#   text = soup.get_text()
-
-#   # break into lines and remove leading and trailing space on each
-#   lines = (line.strip() for line in text.splitlines())
-#   # break multi-headlines into a line each
-#   chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-#   # drop blank lines
-#   text = '\n'.join(chunk for chunk in chunks if chunk)
-#   print text
-
-#   return(text)
-
-from goose import Goose
-
-def parser(url):
-  g = Goose()
-  article = g.extract(url=url)
-  return article.cleaned_text
+  
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
