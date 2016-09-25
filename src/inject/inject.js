@@ -13,7 +13,7 @@ chrome.extension.sendMessage({}, function(response) {
 
                 	//send a request to ""api""
                     var oReq = new XMLHttpRequest();
-                    var ngrok = "https://837e89f8.ngrok.io/?url="
+                    var ngrok = "http://54.167.167.176/?url="
                     var timer = setTimeout(function() {	
                     	oReq.addEventListener("load", function() {
                    		//check if api reponse is not none
@@ -21,15 +21,15 @@ chrome.extension.sendMessage({}, function(response) {
                     		//render out 
 								var msg = this.response;
 
-								alert(msg);
-								// var opt = {
-								// 	message: msg,
-								// 	iconUrl: "icon.png"
-								// };
-								// chrome.runtime.sendMessage({
-								// type: "shownotification",
-								// opt: opt
-								// });
+								// alert(msg);
+								var opt = {
+									message: msg,
+									iconUrl: "icon.png"
+								};
+								chrome.runtime.sendMessage({
+								type: "shownotification",
+								opt: opt
+								});
 
 							}
                     	});

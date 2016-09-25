@@ -1,8 +1,14 @@
+#use pip install 
 from flask import Flask, request, jsonify
-from pyteaser import Summarize
 #https://github.com/xiaoxu193/PyTeaser
-from goose import Goose
+from pyteaser import Summarize
+
 #https://github.com/grangier/python-goose
+from goose import Goose
+# git clone https://github.com/grangier/python-goose.git
+# cd python-goose
+# pip install -r requirements.txt
+# python setup.py install
 
 app = Flask(__name__)
 @app.route('/', methods=['GET'])
@@ -22,4 +28,4 @@ def get_summary():
     return jsonify('none')
 
 if __name__ == '__main__':
-  app.run(debug=True, host='0.0.0.0')
+  app.run(debug=True)

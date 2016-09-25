@@ -1,9 +1,10 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
-  "version": "0.0.1",
+  "name": "abstract",
+  "version": "0.0.2",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "description": "made for hack cooper 2016, hoving over gives quick summary a link",
+  "homepage_url": "",
+  // built from http://extensionizr.com
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
