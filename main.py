@@ -25,7 +25,7 @@ def get_summary():
       stringtext= stringtext + " "+ i 
     return jsonify(stringtext)
   except:
-    return jsonify('none')
+    return jsonify("No abstract/summary available");
 
 if __name__ == '__main__':
   app.run(debug=True)

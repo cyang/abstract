@@ -14,27 +14,23 @@ chrome.extension.sendMessage({}, function(response) {
                 	//send a request to ""api""
                     var oReq = new XMLHttpRequest();
                     // var ngrok = "http://54.167.167.176/?url="
-                    var ngrok = "http://127.0.0.1:5000/?url="
+                    var localHost = "http://127.0.0.1:5000/?url="
                     var timer = setTimeout(function() {	
                     	oReq.addEventListener("load", function() {
-                   		//check if api reponse is not none
-                    		if (this.response !== "none") {
                     		//render out 
-								var msg = this.response;
+							var msg = this.response;
 
-								// alert(msg);
-								var opt = {
-									message: msg,
-									iconUrl: "icon.png"
-								};
-								chrome.runtime.sendMessage({
-								type: "shownotification",
-								opt: opt
-								});
-
-							}
+							// alert(msg);
+							var opt = {
+								message: msg,
+								iconUrl: "icon.png"
+							};
+							chrome.runtime.sendMessage({
+							type: "shownotification",
+							opt: opt
+							});
                     	});
-                    oReq.open("GET", ngrok + url);
+                    oReq.open("GET", localHost + url);
                     oReq.send();
                     }, 500);
 
