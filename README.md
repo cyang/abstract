@@ -14,7 +14,7 @@ Hover over a link and you will get a small snippet of what the link is about jus
 ![Demo](http://i.imgur.com/v3CBueV.png)
 
 
-## How I built it
+## How we built it
 Using a Chrome extension as the frontend and Flask at the backend, we grabbed the url of the link and using _PyTeaser_ to summarize the contents of the link.
 
 ## How to run
@@ -25,17 +25,18 @@ Using a Chrome extension as the frontend and Flask at the backend, we grabbed th
 5. Hover over a link for 1-2 seconds and you should get a notification!
 6. Click the notification to read more
 
-## Challenges I ran into
+## Challenges we ran into
 * Using chrome extension notifications in the content script, when it is only allowed in background script.
 * jQuery not working properly in the extension.
 * Non-reliable summaries provided by _PyTeaser_ for web pages other than news articles.
 
-## Accomplishments that I'm proud of
+## Accomplishments that we're proud of
 Able to get a basic MVP.
 
-## What I learned
+## What we learned
 Using a backend to receive the AJAX GET request and sending back a response.
 
-## What's next for abstract
-Add pictures to the notification and make it more reliable.
+## What's next for Abstract
+* Add pictures to the notification
+* Use a more reliable API for summarizing or make own
 
