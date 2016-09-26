@@ -15,12 +15,12 @@ Hover over a link and you will get a small snippet of what the link is about jus
 
 
 ## How I built it
-Using a Chrome extension as the frontend and Flask at the backend, we grabbed the url of the link and using PyTeaser to summarize the contents of the link.
+Using a Chrome extension as the frontend and Flask at the backend, we grabbed the url of the link and using _PyTeaser_ to summarize the contents of the link.
 
 ## Challenges I ran into
-Using chrome extension notifications in the content script, when it is only allowed in background script.
-
-jQuery not working properly in the extension.
+* Using chrome extension notifications in the content script, when it is only allowed in background script.
+* jQuery not working properly in the extension.
+* Non-reliable summaries provided by _PyTeaser_ for web pages other than news articles.
 
 ## Accomplishments that I'm proud of
 Able to get a basic MVP.
