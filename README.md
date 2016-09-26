@@ -1,4 +1,4 @@
-# abstract
+# Abstract
 HackCooper 2016 Project
 
 **Won Best Data Privacy Hack**
