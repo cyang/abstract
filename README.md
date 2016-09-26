@@ -17,6 +17,13 @@ Hover over a link and you will get a small snippet of what the link is about jus
 ## How I built it
 Using a Chrome extension as the frontend and Flask at the backend, we grabbed the url of the link and using _PyTeaser_ to summarize the contents of the link.
 
+## How to run
+1. Clone project
+2. Load unpacked extension in Chrome
+3. Run ```python main.py``` to start the Flask server
+4. Hover over a link for 1-2 seconds and you should get a notification!
+5. Click the notification to read more
+
 ## Challenges I ran into
 * Using chrome extension notifications in the content script, when it is only allowed in background script.
 * jQuery not working properly in the extension.
