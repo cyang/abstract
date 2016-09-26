@@ -13,8 +13,8 @@ chrome.extension.sendMessage({}, function(response) {
 
                 	//send a request to ""api""
                     var oReq = new XMLHttpRequest();
-                    // var ngrok = "http://54.167.167.176/?url="
-                    var localHost = "http://127.0.0.1:80/?url="
+                
+                    var localHost = "http://127.0.0.1:5000/?url="
                     var timer = setTimeout(function() {	
                     	oReq.addEventListener("load", function() {
                     		//render out 

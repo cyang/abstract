@@ -20,9 +20,10 @@ Using a Chrome extension as the frontend and Flask at the backend, we grabbed th
 ## How to run
 1. Clone project
 2. Load unpacked extension in Chrome
-3. Run ```python main.py``` to start the Flask server
-4. Hover over a link for 1-2 seconds and you should get a notification!
-5. Click the notification to read more
+3. Install python packages by running ```pip install -r requirements.txt```
+4. Run ```python main.py``` to start the Flask server
+5. Hover over a link for 1-2 seconds and you should get a notification!
+6. Click the notification to read more
 
 ## Challenges I ran into
 * Using chrome extension notifications in the content script, when it is only allowed in background script.
