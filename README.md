@@ -9,7 +9,7 @@ HackCooper 2016 Project
 Data privacy is of very importance to us. We don't want others tracking us what we do every time we click on a link (Psst .. Google). What if we could preview what the content of the link is about before we make the decision to actually click on it?
 
 ## What it does
-Hover over a link and you will get a small snippet of what the link is about. Clicking on the notification will display more information.
+Hover over a link and you will get a small snippet of what the link is about just like that of an abstract of a research paper. Clicking on the notification will display more information.
 
 ![Demo](http://i.imgur.com/v3CBueV.png)
 
