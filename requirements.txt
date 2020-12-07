@@ -5,7 +5,7 @@ Flask==0.11.1
 goose-extractor==1.0.25
 itsdangerous==0.24
 jieba==0.38
-Jinja2==2.8
+Jinja2==2.10.1
 lxml==3.6.4
 MarkupSafe==0.23
 nltk==3.2.1
